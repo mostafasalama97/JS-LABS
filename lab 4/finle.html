@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="submit.css">
+</head>
+<body>
+
+    <div class="grade-container">
+        <h1>Thank you for your  </h1>
+        <h1>you have completed the score is  <span id="score"></span></h1>
+
+        <button type="submit" > <a href="./index.html">agian game </a></button>
+
+    </div>
+
+<script>
+    const mostRecentScore = localStorage.getItem("score");
+    document.getElementById('score').innerText= mostRecentScore;
+
+
+
+
+</script>
+    
+</body>
+</html>
